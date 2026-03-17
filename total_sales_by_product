@@ -1,0 +1,8 @@
+SELECT 
+    product_id, 
+    SUM(total_price) AS total_sales,
+    SUM(quantity) AS total_units_sold
+FROM 
+    Orders
+GROUP BY 
+    product_id;
